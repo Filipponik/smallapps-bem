@@ -1,0 +1,55 @@
+.screen2 {
+  background-color: #f2f9fe;
+  padding: 62px 0;
+  &__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  &__example {
+    mix-blend-mode: multiply;
+    width: 511px;
+    height: 696px;
+    background: url('../assets/img/screen_443.png') top 124px left 23px no-repeat,
+      url('../assets/img/phone_442.png') bottom 10px right 200px no-repeat,
+      url('../assets/img/layer_12_copy_435.png') bottom -10px right no-repeat;
+  }
+  &__text-block {
+    width: 474px;
+  }
+  &__title {
+    color: #5dca88;
+    padding: 101px 0 19px 0;
+    margin: 0 0 45px 0;
+    position: relative;
+    &:after {
+      display: block;
+      content: '';
+      width: 104px;
+      height: 2px;
+      position: absolute;
+      bottom: 0;
+      background-color: #949c9c;
+    }
+  }
+  &__subtitle {
+    font-family: Raleway;
+    font-size: 36px;
+    line-height: 1.2;
+    font-weight: 400;
+    color: #8c9494;
+    margin: 0 0 51px 0;
+  }
+  &__description {
+    font-family: Raleway;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #8c9494;
+    margin: 0 0 77px 0;
+  }
+  &__button {
+    color: #636c6c;
+    border: 3px solid rgba(0, 0, 0, 0.5);
+  }
+}

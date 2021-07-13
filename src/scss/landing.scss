@@ -1,0 +1,37 @@
+.landing {
+  padding-top: 181px;
+  height: calc(730px-181px);
+  background: url('../assets/img/bg1.png') bottom / cover no-repeat;
+  &__container {
+    height: 730px;
+    background: url('../assets/img/screenshot1.png') bottom 77px right 59px no-repeat,
+      url('../assets/img/iphone_hand.png') bottom 0 right 0 no-repeat;
+  }
+  &__title {
+    width: 470px;
+    color: #ffffff;
+    margin: px 0px 10px 0px;
+  }
+  &__subtitle {
+    width: 470px;
+    font-family: Raleway;
+    font-size: 36px;
+    line-height: 1.2;
+    font-weight: 300;
+    color: #ffffff;
+    margin: 0px 0px 46px 0px;
+  }
+  &__text {
+    width: 470px;
+    font-family: Raleway;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #9dc7d1;
+    margin: 0px 0px 75px 0px;
+  }
+  &__button {
+    color: #fff;
+    border: 3px solid rgba(255,255,255,0.49);
+  }
+}

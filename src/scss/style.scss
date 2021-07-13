@@ -1,0 +1,53 @@
+@import "nullstyle.scss";
+@import "header.scss";
+@import "landing.scss";
+@import "features.scss";
+@import "screens1.scss";
+@import "gallery.scss";
+@import "screens2.scss";
+@import "feedback.scss";
+@import "subscribe.scss";
+@import "footer.scss";
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap');
+
+@font-face {
+	font-family: "Proxima Nova";
+	src: url('../assets/fonts/Proxima_Nova.ttf');
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+.container {
+	width: 1170px;
+	padding: 0px 15px;
+	margin: 0 auto;
+}
+
+h1, h2 {
+	user-select: none;
+}
+
+.title {
+	font-family: Raleway;
+	font-size: 36px;
+	line-height: 1.2;
+	font-weight: 700;
+}
+
+.button {
+	user-select: none;
+	font-family: Raleway;
+	font-size: 21px;
+	line-height: 1.2;
+	font-weight: 700;
+	text-transform: uppercase;
+	border-radius: 9999px;
+	padding: 18px 59px;
+	&:hover {
+		background-color: rgba(0,0,0, 0.05);
+		transition: all 100ms ease-out;
+	}
+}

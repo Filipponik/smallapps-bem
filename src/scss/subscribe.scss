@@ -1,0 +1,60 @@
+.subscribe {
+  background-color: #f3f5f5;
+  padding: 90px 0 121px 0;
+  &__title {
+    width: 500px;
+    margin: 0 auto 56px auto;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #8c9494;
+    &:before {
+      content: "";
+      display: block;
+      width: 39px;
+      height: 33px;
+      background: url('../assets/img/mail.png') center no-repeat;
+    }
+  }
+  &__form {
+    position: relative;
+    width: 770px;
+    margin: 0 auto;
+  }
+  &__text-box {
+    font-family: Raleway;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #8c9494;
+    width: 660px;
+    height: 60px;
+    background-color: #ffffff;
+    border: 2px solid #bbc3c2;
+    border-radius: 999px;
+    padding: 24px 33px;
+    &:focus {
+      border-color: #a8afae;
+    }
+  }
+  &__button {
+    position: absolute;
+    right:0;
+    font-family: 'Proxima Nova';
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #ffffff;
+    width: 170px;
+    height: 60px;
+    background-color: #5dca88;
+    border-radius: 999px;
+    z-index: 2;
+    &:hover {
+      background-color: #54b97d;
+      transition: all 100ms ease-out;
+    }
+  }
+}

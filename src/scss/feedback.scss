@@ -1,0 +1,50 @@
+.feedback {
+  padding: 104px 0 113px 0;
+  &__title {
+    text-align: center;
+    color: #636c6c;
+    margin: 0 0 38px 0;
+  }
+  &__photo {
+    width: 100px;
+    height: 100px;
+    display: block;
+    margin: 0 auto 47px auto;
+  }
+  &__text {
+    font-family: 'Droid Serif';
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: 400;
+    font-style: italic;
+    color: #8c9494;
+    text-align: center;
+    margin: 0 0 27px 0;
+  }
+  &__author {
+    font-family: Raleway;
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #5dca88;
+    text-align: center;
+    margin: 0 0 39px 0;
+  }
+  &__selector-block {
+    width: 50px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    margin: 0 auto;
+  }
+  &__selector {
+    cursor: pointer;
+    width: 11px;
+    height: 11px;
+    background-color: #8c9494;
+    border-radius: 10px;
+    &_active {
+      background-color: #5dca88;
+    }
+  }
+}

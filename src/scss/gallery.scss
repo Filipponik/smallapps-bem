@@ -1,0 +1,42 @@
+.gallery {
+  padding: 102px 0 125px 0;
+  &__title {
+    color: #636c6c;
+    margin: 0 0 24px 0;
+    text-align: center;
+  }
+  &__text {
+    font-family: Raleway;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #afb8b8;
+    margin: 0 auto 84px auto;
+    width: 760px;
+    text-align: center;
+  }
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+  }
+  &__item {
+    width: 300px;
+  }
+  &__image {
+    width: 296px;
+    height: 622px;
+    background: url('../assets/img/screen_copy_706.png') bottom 88px left 24px no-repeat,
+      url('../assets/img/mobile_212.png') no-repeat;
+    margin: 0 0 47px 0;
+  }
+  &__description {
+    font-family: Raleway;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #8c9494;
+    text-align: center;
+  }
+}

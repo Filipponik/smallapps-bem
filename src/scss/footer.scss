@@ -1,0 +1,38 @@
+.footer {
+  background-color: #2d312f;
+  padding: 75px 0 49px 0;
+  &__text {
+    text-align: center;
+    font-family: Raleway;
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #8c9494;
+    margin: 0 0 34px 0;
+  }
+  &__socials {
+    width: 280px;
+    height: 42px;
+    display: block;
+    margin: 0 auto 70px auto;
+  }
+  &__nav-menu {
+    width: 409px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    margin: 0 auto;
+  }
+  &__nav-element {
+    font-family: Raleway;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #8c9494;
+    &:hover {
+      color: #cbd8d8;
+      transition: all 300ms ease-out;
+    }
+  }
+}

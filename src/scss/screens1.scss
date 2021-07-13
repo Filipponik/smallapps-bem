@@ -1,0 +1,56 @@
+.screens1 {
+  background-color: #f2f9fe;
+  padding-bottom: 62px;
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+  &__title {
+    padding-top: 163px;
+    padding: 163px 0 19px 0;
+    margin: 0 0 45px 0;
+    color: #5dca88;
+    position: relative;
+    &:after {
+      display: block;
+      content: '';
+      width: 104px;
+      height: 2px;
+      position: absolute;
+      bottom: 0;
+      background-color: #949c9c;
+    }
+  }
+  &__text-block {
+    width: 480px;
+  }
+  &__subtitle {
+    font-family: Raleway;
+    font-size: 36px;
+    line-height: 1.2;
+    font-weight: 400;
+    color: #8c9494;
+    margin: 0 0 51px 0;
+  }
+  &__small-text {
+    font-family: Raleway;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #8c9494;
+    margin: 0 0 77px 0;
+  }
+  &__button {
+    color: #636c6c;
+    border: 3px solid rgba(0, 0, 0, 0.5);
+  }
+  &__example {
+    mix-blend-mode: multiply;
+    margin-top: 62px;
+    width: 380px;
+    height: 700px;
+    background: url('../assets/img/screen_348.png') bottom 113px right 38px no-repeat ,
+      url('../assets/img/mobile_101.png') bottom no-repeat;
+  }
+}
