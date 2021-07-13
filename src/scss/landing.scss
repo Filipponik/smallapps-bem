@@ -1,13 +1,13 @@
 .landing {
-  padding-top: 181px;
-  height: calc(730px-181px);
+  height: 730px;
   background: url('../assets/img/bg1.png') bottom / cover no-repeat;
   &__container {
     height: 730px;
     background: url('../assets/img/screenshot1.png') bottom 77px right 59px no-repeat,
-      url('../assets/img/iphone_hand.png') bottom 0 right 0 no-repeat;
+    url('../assets/img/iphone_hand.png') bottom 0 right 0 no-repeat,;
   }
   &__title {
+    padding-top: 181px;
     width: 470px;
     color: #ffffff;
     margin: px 0px 10px 0px;
