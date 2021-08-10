@@ -1,14 +1,8 @@
-@import "nullstyle.scss";
-@import "header.scss";
-@import "landing.scss";
-@import "features.scss";
-@import "screens1.scss";
-@import "gallery.scss";
-@import "screens2.scss";
-@import "feedback.scss";
-@import "subscribe.scss";
-@import "footer.scss";
+$sm: 576px;
+$md: 768px;
+$lg: 992px;
 
+@import "nullstyle.scss";
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap');
 
 @font-face {
@@ -24,6 +18,10 @@ html {
 	width: 1170px;
 	padding: 0px 15px;
 	margin: 0 auto;
+	@media screen and (max-width: $sm) {
+		padding: 0 4vw;
+		width: 100%;
+	}
 }
 
 h1, h2 {
@@ -50,4 +48,21 @@ h1, h2 {
 		background-color: rgba(0,0,0, 0.05);
 		transition: all 100ms ease-out;
 	}
+	@media screen and (max-width: $sm) {
+		display: block;
+		text-align: center;
+		padding: 15px;
+		margin: 0px 10vw;
+		font-size: 15px;
+	}
 }
+
+@import "header.scss";
+@import "landing.scss";
+@import "features.scss";
+@import "screens1.scss";
+@import "gallery.scss";
+@import "screens2.scss";
+@import "feedback.scss";
+@import "subscribe.scss";
+@import "footer.scss";
