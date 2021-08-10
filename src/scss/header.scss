@@ -1,7 +1,11 @@
 .header {
   padding: 42px 0px;
+  @media screen and (max-width: $sm) {
+    padding: 15px 0px;
+  }
   display: flex;
-  align-items: center;
+  align-items: baseline;
+  flex-wrap: wrap;
   &__sitename {
     user-select: none;
     font-family: 'Proxima Nova';
@@ -10,6 +14,10 @@
     font-weight: 400;
     color: #3c3d42;
     margin-right: 34px;
+    @media screen and (max-width: $sm) {
+      font-size: 15px;
+      margin-right: 7vw;
+    }
   }
   &__nav {
     user-select: none;
@@ -17,6 +25,9 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    @media screen and (max-width: $sm) {
+      width: 55vw;
+    }
   }
   &__nav-element {
     font-family: Raleway;
@@ -27,9 +38,11 @@
     &_active {
       color: #3c3d42;
     }
+    @media screen and (max-width: $sm) {
+      font-size: 11px;
+    }
   }
   &__contacts {
-    width: 385px;
     margin: 0px 0px 0px auto;
     display: flex;
     justify-content: space-between;
@@ -40,15 +53,32 @@
     color: #3c3d42;
     & > a:hover {
       color: #5dca88;
-
+    }
+    @media screen and (max-width: $sm) {
+      font-size: 10px;
+      margin-top: 15px;
     }
   }
   &__phone:before {
     content: url("../assets/img/phone.png");
     margin-right: 10px;
+    &:before {
+      // TODO Responsive icons
+      margin-right: 8px;
+    }
   }
-  &__email:before {
-    content: url("../assets/img/email.png");
-    margin-right: 12px;
+  &__email{
+    margin-left: 30px;
+    @media screen and (max-width: $sm) {
+      margin-left: 3vw;
+      &:before {
+        margin-right: 8px;
+      }
+    }
+    &:before {
+      content: url("../assets/img/email.png");
+      margin-right: 12px;
+    }
   }
+
 }
