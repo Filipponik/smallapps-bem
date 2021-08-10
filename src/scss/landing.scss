@@ -1,16 +1,31 @@
 .landing {
   height: 730px;
   background: url('../assets/img/bg1.png') bottom / cover no-repeat;
+  @media screen and (max-width: $sm) {
+    height: 80vh;
+  }
   &__container {
     height: 730px;
     background: url('../assets/img/screenshot1.png') bottom 77px right 59px no-repeat,
-    url('../assets/img/iphone_hand.png') bottom 0 right 0 no-repeat,;
+      url('../assets/img/iphone_hand.png') bottom 0 right 0 no-repeat;
+      // background-size: 50%;
+    @media screen and (max-width: $sm) {
+      // TODO Responsive background
+      // background: url('../assets/img/screenshot1.png') bottom 10% right 10% / 50% no-repeat,
+      //   url('../assets/img/iphone_hand.png') bottom 0 right 0 / 100% no-repeat;
+
+      height: 80vh;
+    }
   }
   &__title {
     padding-top: 181px;
     width: 470px;
     color: #ffffff;
-    margin: px 0px 10px 0px;
+    margin: 0 0px 10px 0px;
+    @media screen and (max-width: $sm) {
+      padding-top: 10vw;
+      width: 90vw;
+    }
   }
   &__subtitle {
     width: 470px;
@@ -20,6 +35,10 @@
     font-weight: 300;
     color: #ffffff;
     margin: 0px 0px 46px 0px;
+    @media screen and (max-width: $sm) {
+      width: 90vw;
+      margin: 0px 0px 30px 0px;
+    }
   }
   &__text {
     width: 470px;
@@ -29,6 +48,10 @@
     font-weight: 400;
     color: #9dc7d1;
     margin: 0px 0px 75px 0px;
+    @media screen and (max-width: $sm) {
+      width: 90vw;
+      margin: 0px 0px 30vw 0px;
+    }
   }
   &__button {
     color: #fff;
