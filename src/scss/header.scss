@@ -59,25 +59,38 @@
       margin-top: 15px;
     }
   }
-  &__phone:before {
-    content: url("../assets/img/phone.png");
-    margin-right: 10px;
+  &__phone {
+    position: relative;
+    margin-right: 20px;
     &:before {
-      // TODO Responsive icons
-      margin-right: 8px;
+      content:url("../assets/img/phone.png");
+      margin-right: 10px;
+      @media screen and (max-width: $sm) {
+        content:'';
+        background: no-repeat center / contain url("../assets/img/phone.png");
+        width: 10px;
+        height: 10px;
+        position: absolute;
+        left: -15px;
+      }
     }
   }
   &__email{
-    margin-left: 30px;
+    position: relative;
     @media screen and (max-width: $sm) {
       margin-left: 3vw;
-      &:before {
-        margin-right: 8px;
-      }
     }
     &:before {
-      content: url("../assets/img/email.png");
-      margin-right: 12px;
+      content:url("../assets/img/email.png");
+      margin-right: 10px;
+      @media screen and (max-width: $sm) {
+        content:'';
+        background: no-repeat center / contain url("../assets/img/email.png");
+        width: 12px;
+        height: 10px;
+        position: absolute;
+        left: -17px;
+      }
     }
   }
 
