@@ -6,7 +6,7 @@
     margin: 0 auto 56px auto;
     text-align: center;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     color: #8c9494;
     &:before {
@@ -14,7 +14,11 @@
       display: block;
       width: 39px;
       height: 33px;
-      background: url('../assets/img/mail.png') center no-repeat;
+      background: url('../assets/img/mail.png') top / contain no-repeat;
+    }
+    @media screen and (max-width: $sm) {
+      width: 70vw;
+      font-size: 25px;
     }
   }
   &__form {
