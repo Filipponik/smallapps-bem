@@ -1,6 +1,10 @@
 .footer {
   background-color: #2d312f;
   padding: 75px 0 49px 0;
+  @media screen and (max-width: $sm) {
+    padding: 50px 0 25px 0;
+  }
+
   &__text {
     text-align: center;
     font-family: Raleway;
@@ -23,6 +27,11 @@
     flex-direction: row;
     align-items: center;
     margin: 0 auto;
+    @media screen and (max-width: $sm) {
+      width: 90vw;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
   }
   &__nav-element {
     font-family: Raleway;
