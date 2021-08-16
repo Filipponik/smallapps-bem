@@ -5,6 +5,9 @@
     display: flex;
     justify-content: space-between;
     flex-direction: row;
+    @media screen and (max-width: $sm) {
+      flex-direction: column;
+    }
   }
   &__title {
     padding-top: 163px;
@@ -21,9 +24,18 @@
       bottom: 0;
       background-color: #949c9c;
     }
+    
+    @media screen and (max-width: $sm) {
+      padding-top: 20vw;
+    }
   }
   &__text-block {
     width: 480px;
+    @media screen and (max-width: $sm) {
+      display: block;
+      width: 80vw;
+      margin: 0 auto;
+    }
   }
   &__subtitle {
     font-family: Raleway;
